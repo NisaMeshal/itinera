@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { theme } from './mantine-theme';
 
@@ -12,7 +12,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <MantineProvider theme={theme}>
+    <ColorSchemeScript defaultColorScheme='auto'/>
+    <MantineProvider theme={theme} defaultColorScheme='auto'>
       <App />
     </MantineProvider>
   </React.StrictMode>
