@@ -1,10 +1,11 @@
 import styled from '@emotion/styled'
 
 export const PageWrapper = styled.div`
-    background-color: black;
+    background-color: #fff;
+    max-width: 800px;
     flex-grow: 1;
-    padding: 0px;
+    padding: 40px 35px;
     width: 100%;
-    height: 100%;
-    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
 `

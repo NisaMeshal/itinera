@@ -4,7 +4,6 @@ import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
 import { useMantineTheme } from '@mantine/core';
-import { theme } from './mantine-theme';
 import Home from './pages/Home';
 import About from './pages/About';
 
@@ -15,6 +14,8 @@ const apiCall = () => {
 }
 
 function App() {
+  const mantineTheme = useMantineTheme(); // hook to access the active theme,, can i do without this?
+
   return (
     <BrowserRouter>
       <div className="App">
