@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { MantineProvider } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { theme } from './mantine-theme';
+import { ColorSchemeScript } from '@mantine/core';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <MantineProvider theme={theme}>
+    <ColorSchemeScript defaultColorScheme="auto" />
+    <MantineProvider theme={theme} defaultColorScheme="auto">
       <App />
     </MantineProvider>
   </React.StrictMode>
