@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link as RouterLink } from 'react-router-dom';
 import logo from './logo.svg';
 import axios from 'axios';
-import './App.css';
+import './css/App.css';
 import { useMantineTheme } from '@mantine/core';
 import Home from './pages/Home';
 import About from './pages/About';
